@@ -27,21 +27,6 @@
     <!-- Placeholder for navigation that is in navbar.html-->
     <div id="nav-placeholder"></div>
 
-    <div class="alert alert-info" role="alert">
-      You can update the navbar.html file with a different navigation menu. For
-      bootstrap code for different navbars go to
-      <a
-        href="https://getbootstrap.com/docs/5.3/components/navbar/"
-        target="_blank">Visit Bootstrap navbar</a>. Delete this part when you are done.
-    </div>
-
-    <!-- Content of webpage -->
-    <div class="container bg-primary-subtle text-primary-emphasis p-3">
-      <p>
-        Read the project iteration 01 requirements.
-      </p>
-    </div>
-
     <!--  script code to add navbar -->
     <script>
       // Load the navigation menu into the placeholder
@@ -60,16 +45,16 @@
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Cybersecurity.png" alt="CyberSecurity" class="d-block" style="width:100%">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Cybersecurity.png" alt="Digital Lock" class="d-block" style="width:100%">
     </div>
     <div class="carousel-item">
-      <img src="https://media.freemalaysiatoday.com/wp-content/uploads/2025/02/75761ef1-cybersecurity-pic-freepik-130225.webp" alt="CyberSecurity 2" class="d-block" style="width:100%">
+      <img src="https://media.freemalaysiatoday.com/wp-content/uploads/2025/02/75761ef1-cybersecurity-pic-freepik-130225.webp" alt="Person in hoodie looking at laptop" class="d-block" style="width:100%">
     </div>
     <div class="carousel-item">
-      <img src="https://cdn.glitch.global/781c45b7-b8c8-42fa-800f-e2737851a8a3/IMG_1963.JPG?v=1741300240806" alt="CyberSecurity3" class="d-block" style="width:100%">
+      <img src="https://cdn.glitch.global/781c45b7-b8c8-42fa-800f-e2737851a8a3/cybersecurity.jpg?v=1742613514688" alt="hand hovering over tablet with a shield" class="d-block" style="width:100%">
     </div>
   </div>
-  
+  <!-- So the divs above are the images that are displayed on the carousel. They are located in the assets fr the links. -->
   <!-- Left and right controls/icons -->
   <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
@@ -78,10 +63,8 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
-
+<!-- This above is pretty simple to understand, but its my buttons for the carousel, so if you want to see an image again or skip one, you can. -->
 <div class="container-fluid mt-3">
-  <h3>Who I am</h3>
-  <p>My Pictures</p>
 </div>
 
     <h1>
@@ -98,12 +81,13 @@
     <p>
       I am currently attending MSU Denver in hopes of getting my bachelors degree in CyberSecurity. This is the bachelors program for <a href="https://www.msudenver.edu/criminal-justice-criminology/cybersecurity-bs/">CyberSecurity at MSU Denver.</a>
     </p>
-    <!--This is the my link for Cyber, I need to edit it to take you into a seperate tab when clicking open the link-->
+    <!--This is the my link for Cyberdegree -->
     <p class="d-inline-flex gap-1">
   <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Soft Skills</a>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Technical Skills</button>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both</button>
 </p>
+    <!-- This above are the buttons that control my tabs for the skills. As you can see, the toggle both option has multicollapseexample1 and 2 listed in aria controls -->
 <div class="row">
   <div class="col">
     <div class="collapse multi-collapse" id="multiCollapseExample1">
@@ -118,6 +102,7 @@
       </div>
     </div>
   </div>
+  <!-- These are my two awesome tabs that you can activate by pressing the buttons. These contain unorganized lists because it looks nicer as bullet points. -->
   <div class="col">
     <div class="collapse multi-collapse" id="multiCollapseExample2">
       <div class="card card-body">
@@ -143,7 +128,24 @@
       so sometimes I like to draw although I haven't kept up with it as much as 
       I wish I would.
     </p>
-    <!-- I need to put in links for 2 of my activities that I like and Images 
-for some of them-->
+    <div class="container mt-3">
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="https://cdn.glitch.global/781c45b7-b8c8-42fa-800f-e2737851a8a3/Steam%20Store%20Page.png?v=1742612818103" alt="Steam store page" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Steam</h4>
+      <p class="card-text">I enjoy spending time playing games on my computer with friends.</p>
+      <a href="https://store.steampowered.com/" class="btn btn-primary">Steam Store Page</a>
+    </div>
+  </div>
+      <!-- Ok this is a little complex, but these are cards that I added images too and the card body to get 2 birds with one stone for my interest pictures and links -->
+  <div class="container mt-3">
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="https://cdn.glitch.global/781c45b7-b8c8-42fa-800f-e2737851a8a3/snowmobile.jpeg?v=1742613265911" alt="Guy snowmobiling" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Snowmobiling</h4>
+      <p class="card-text">I really enjoy going into the mountains with my friends and family to tear up the peaks in snowmobiles!</p>
+      <a href="https://www.colorado.com/articles/pure-powder-snowmobiling-colorado" class="btn btn-primary">Colorado Snowmobiling website</a>
+    </div>
+  </div>
   </body>
 </html>
